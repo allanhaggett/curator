@@ -1,0 +1,1 @@
+<?php // Activities/index.php is the current home page as of 2021-03-31
