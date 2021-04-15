@@ -213,7 +213,12 @@ ServerRequest::addDetector('tablet', function ($request) {
 //Inflector::rules('irregular', ['red' => 'redlings']);
 //Inflector::rules('uninflected', ['dontinflectme']);
 
+$this->addPlugin(\CakeDC\Users\Plugin::class);
 
 Configure::write('Users.config', ['users']);
-//Plugin::load('CakeDC/Users', ['routes' => true, 'bootstrap' => true]);
-Configure::write('Users.Social.login', true); //to enable social login
+
+Configure::write('OAuth.providers.twitter.options.clientId', 'CLIENTID');
+Configure::write('OAuth.providers.twitter.options.clientSecret', 'CLEINTSECRET');
+
+// Configure::write('OAuth.providers.azuread.options.clientId', 'CLIENTID');
+// Configure::write('OAuth.providers.azuread.options.clientSecret', 'CLIENT SECRET');

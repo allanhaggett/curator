@@ -88,6 +88,7 @@ if ( strpos($_SERVER['HTTP_USER_AGENT'], 'rv:11.0')     !== false
 	</li>
 	<li class="nav-item">
 		<?php echo $this->User->logout() ?>
+		
 	</li>
 	
 
