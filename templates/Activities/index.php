@@ -51,6 +51,7 @@ ourselves as part of a trusted, talented, and modern public service.</p>
 
 
 <div class="col-md-3">
+
 <h2 class="mt-3">Latest Topics</h2>
 <?php foreach ($allcats as $cat) : ?>
 <div class="p-3 mb-3 bg-white rounded-lg">

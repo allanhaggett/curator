@@ -70,7 +70,7 @@ if ( strpos($_SERVER['HTTP_USER_AGENT'], 'rv:11.0')     !== false
 		<img class="animate__animated animate__rotateIn" alt="Logo" height="50" src="/img/curator-rings-logo.svg" width="50">
 		Learning Curator
 	</a>
-	<?php if(!empty($active)): ?>
+	
 	<button class="navbar-toggler " 
 		type="button" 
 		data-toggle="collapse" 
@@ -84,20 +84,13 @@ if ( strpos($_SERVER['HTTP_USER_AGENT'], 'rv:11.0')     !== false
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 	<ul class="navbar-nav mr-auto">
 	<li class="nav-item">
-		<a class="nav-link" href="/users/pathways">Your Profile</a>
+		<a class="nav-link" href="/profile">Your Profile</a>
+	</li>
+	<li class="nav-item">
+		<?php echo $this->User->logout() ?>
 	</li>
 	
-	<?php if($active->role_id == 2 || $active->role_id ==5): ?>
-	<li class="nav-item dropdown">
-		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			Curators
-		</a>
-		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			<a class="dropdown-item" href="/users/list">All Users</a>
-			<a class="dropdown-item" href="/reports/list">All Reports</a>
-		</div>
-	</li>
-	<?php endif ?>
+
 	</ul>
 
 	<form method="get" action="/activities/find" class="form-inline my-2 my-lg-0 mr-3">
@@ -106,7 +99,7 @@ if ( strpos($_SERVER['HTTP_USER_AGENT'], 'rv:11.0')     !== false
 	</form>
 
 	</div> <!-- /endof .collapse navbar-collapse -->
-	<?php endif ?>
+	
 </nav>
 
 

@@ -1,3 +1,3 @@
 <?php 
-$config = [];
+$config = ['Users' => ['Social' => ['login' => true]]];
 return $config;
