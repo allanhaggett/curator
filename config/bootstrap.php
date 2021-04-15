@@ -217,5 +217,3 @@ ServerRequest::addDetector('tablet', function ($request) {
 Configure::write('Users.config', ['users']);
 //Plugin::load('CakeDC/Users', ['routes' => true, 'bootstrap' => true]);
 Configure::write('Users.Social.login', true); //to enable social login
-Configure::write('OAuth.providers.twitter.options.clientId', 'LXFLAUMygU2tEPzyLXo88SIHk');
-Configure::write('OAuth.providers.twitter.options.clientSecret', 'az1d6nRuoqEW7RsB7VIvCoG8ggyDCnArebCpWUH4oGoOq3lWSt');
