@@ -217,8 +217,5 @@ $this->addPlugin(\CakeDC\Users\Plugin::class);
 
 Configure::write('Users.config', ['users']);
 
-Configure::write('OAuth.providers.twitter.options.clientId', 'CLIENTID');
-Configure::write('OAuth.providers.twitter.options.clientSecret', 'CLEINTSECRET');
-
-// Configure::write('OAuth.providers.azuread.options.clientId', 'CLIENTID');
-// Configure::write('OAuth.providers.azuread.options.clientSecret', 'CLIENT SECRET');
+Configure::write('OAuth.providers.azuread.options.clientId', 'f3b1c861-45bb-44e3-b298-16831341821d');
+Configure::write('OAuth.providers.azuread.options.clientSecret', 'TKkjrd454Zf.V3IGQ8arASS_-Dx9Hp1l.Y');
