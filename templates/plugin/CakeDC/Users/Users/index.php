@@ -13,13 +13,13 @@
 <div class="row justify-content-md-center" id="colorful">
 <div class="col-6">
 <h1 class="mt-5">Users</h1>
-<div class="bg-white mb-5 p-5 shadow-sm">
+<div class="bg-white mb-5 p-3 shadow-sm">
 
 <?php foreach (${$tableAlias} as $user) : ?>
 <div class="bg-light mb-3 p-3">
     <div class="">
-    <?= $this->Html->link(__d('cake_d_c/users', h($user->username)), ['action' => 'view', $user->id]) ?> 
-    <?= h($user->email) ?> <?= h($user->first_name) ?> <?= h($user->last_name) ?>
+    <?= $this->Html->link(__d('cake_d_c/users', h($user->username)), ['action' => 'view', $user->id],['class' => 'font-weight-bold']) ?> 
+    <?= h($user->first_name) ?> <?= h($user->last_name) ?> <?= h($user->email) ?>
     </div>
 </div>
 
