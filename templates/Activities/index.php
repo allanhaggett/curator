@@ -117,7 +117,7 @@ ourselves as part of a trusted, talented, and modern public service.</p>
 
 	<?= $this->Html->link($activity->name, ['action' => 'view', $activity->id]) ?>
 </h3>
- </div>
+ 
  </div>
 
 <?php endforeach; ?>

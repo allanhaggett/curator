@@ -44,6 +44,7 @@
 
 </head>
 <body>
+
 <nav class="navbar navbar-expand-lg sticky-top bg-white shadow-sm">
 	<a class="navbar-brand" href="/">
 		<img alt="Logo" class="animate__animated animate__rotateIn" height="50" src="/img/curator-rings-logo.svg" width="50">
@@ -69,10 +70,7 @@
 		<?php echo $this->User->logout() ?>
 		
 	</li>
-	
-
 	</ul>
-
 	<form method="get" action="/activities/find" class="form-inline my-2 my-lg-0 mr-3">
 		<input class="form-control mr-sm-2" type="search" placeholder="Activity Search" aria-label="Search" name="q">
 		<button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
@@ -81,7 +79,6 @@
 	 </div><!-- /endof .collapse navbar-collapse -->
 	 <?php endif ?>
 </nav>
-
 
 
 <?= $this->fetch('content') ?>

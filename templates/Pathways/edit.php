@@ -40,6 +40,7 @@
                     echo $this->Form->control('steps._ids', ['options' => $steps]);
                     echo $this->Form->control('users._ids', ['options' => $users]);
                 ?>
+                
             </fieldset>
             <?= $this->Form->button(__('Submit')) ?>
             <?= $this->Form->end() ?>
