@@ -250,9 +250,8 @@ $lastobj = $s->description;
 
 
 		<?= $this->Form->create(null,['url' => ['controller' => 'Activities', 'action' => 'claim/' . $activity->id], 'class' => 'claim']) ?>
-		<?= $this->Form->hidden('users.0.created', ['value' => date('Y-m-d H:i:s')]); ?>
+		<?php //$this->Form->hidden('users.0.created', ['value' => date('Y-m-d H:i:s')]); ?>
 		<?= $this->Form->hidden('users.0.id', ['value' => $uid]); ?>
-
 		<?= $this->Form->button(__('Claim'),['class'=>'btn btn-success', 'title' => 'If you\'ve completed this activity, claim it so it counts against your progress', 'data-toggle' => 'tooltip', 'data-placement' => 'bottom']) ?>
 		<?= $this->Form->end() ?>
 
