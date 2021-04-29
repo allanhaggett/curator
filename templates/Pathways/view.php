@@ -176,7 +176,7 @@ This seems to work out, but #TODO investigate optimizing this
 <?php else: ?>
 <div class="card card-body my-3 stickyrings">
 
-<?= $this->Form->create($pathway) ?>
+<?= $this->Form->create(null, ['url' => ['controller' => 'pathways','action' => 'follow/' . $pathway->id]]) ?>
 <?= $this->Form->control('users.0.id',['type' => 'hidden', 'value' => $uid]) ?>
 <?= $this->Form->button(__('Follow this pathway'),['class' => 'btn btn-block btn-success mb-0']) ?>
 

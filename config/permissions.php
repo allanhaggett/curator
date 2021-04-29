@@ -141,7 +141,7 @@ return [
         [
             'role' => '*',
             'controller' => 'Pathways',
-            'action' => ['index','view'],
+            'action' => ['index','view','follow'],
         ],
         [
             'role' => '*',
