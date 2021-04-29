@@ -17,12 +17,19 @@ $Users = ${$tableAlias};
 
 <div class="bg-white p-5 my-5">
 
-<?= $this->Html->link(__d('cake_d_c/users', 'Edit User'), ['action' => 'edit', $Users->id]) ?> 
+<div class="row justify-content-end text-right">
+<div class="col-5">
+<div class="btn-group">
+<?= $this->Html->link(__d('cake_d_c/users', 'Edit User'), ['action' => 'edit', $Users->id],['class'=>'btn btn-dark']) ?> 
 <?= $this->Form->postLink(
                 __d('cake_d_c/users', 'Delete User'),
                 ['action' => 'delete', $Users->id],
-                ['confirm' => __d('cake_d_c/users', 'Are you sure you want to delete # {0}?', $Users->id)]
+                ['confirm' => __d('cake_d_c/users', 'Are you sure you want to delete # {0}?', $Users->id),
+                'class' => 'btn btn-light']
             ) ?> 
+</div>
+</div>
+</div>
 <?php if($this->Number->format($Users->active) == 1): ?>
 <div>
     <span class="badge badge-success">Active</span>
@@ -49,7 +56,6 @@ $Users = ${$tableAlias};
 <div class="col-md-6">
     <div><?= __d('cake_d_c/users', 'Activation Date') ?></div>
     <p><?= h($Users->activation_date) ?></p>
-
     <div><?= __d('cake_d_c/users', 'Created') ?></div>
     <p><?= h($Users->created) ?></p>
     <div><?= __d('cake_d_c/users', 'Modified') ?></div>

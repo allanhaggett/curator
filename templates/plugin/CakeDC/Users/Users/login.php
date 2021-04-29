@@ -23,6 +23,7 @@ your corporate training offered through the Learning Centre.</p>
 ourselves as part of a trusted</a>, talented, and modern public service.</p>
 <div><a href="/auth/azuread" class="btn btn-lg btn-success">Sign In  with your.name@gov.bc.ca address to continue</a></div>
 <div class="m-5 p-3 bg-light">
+<p><em>If you're a curator or an admin:</em></p>
 <?= $this->Form->create() ?>
 <?= $this->Form->control('username', ['label' => __d('cake_d_c/users', 'Username'), 'required' => true, 'class'=>'form-control']) ?>
 <?= $this->Form->control('password', ['label' => __d('cake_d_c/users', 'Password'), 'required' => true, 'class'=>'form-control']) ?>
